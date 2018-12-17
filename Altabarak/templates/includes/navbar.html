@@ -1,0 +1,118 @@
+
+{% load static %}
+
+{% block custom_css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+	<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<!-- above navbar -->
+<div class="abovenavbar">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-4 col-md-5 hidden-xs d-none d-md-block aws">
+				<a target="_blank" href="https://www.facebook.com/eltabarak.eng"><i id="face" class="fab fa-facebook-f fa-2x"></i></a>
+				<a target="_blank" href="https://www.youtube.com/watch?v=eJETCMRYlDw"><i id="myi" class="fab fa-youtube fa-2x"></i></a>
+				<a href="#"><i id="myi" class="fab fa-google-plus-g fa-2x"></i></a>
+				<div class="mywidth">
+
+				</div>
+				<h7><i id="miipho" class="fas fa-mobile-alt fa-2x"></i> 02 010 6996 6948</h7>
+			</div>
+
+			<div class="col-lg-8 col-md-7">
+				<img src="../../static/img/Logo.gif">
+				<h6 id="myh4">للهندســة و المقـــــــــاولات</h6>
+				<h5 id="myh5">م / عبد المنعم حسن عثمان وشركاه</h5>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- End above navbar -->
+
+<!-- Start Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+		  <a class="navbar-brand" href="#">English</a>
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <!-- collect the navbar links, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'projects:contact_us' %}">اتصل بنا<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'projects:jobs' %}">التوظيف<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">التبارك للخرسانه<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item dropdown">
+
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          المشروعات
+		        </a>
+
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="{% url 'projects:hospitals' %}">مستشفيات</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:banks' %}">البنوك الحكومية</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Public_buildings' %}">المبانى الادارية </a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Colleges&Institutes' %}">الكليات و المعاهد</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Factories' %}">المصانع</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Schools' %}">المدارس العامة</a>
+		          <div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="{% url 'projects:Private_Schools' %}">المدارس الخاصة</a>
+						 <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Compound' %}">كومباوند</a>
+							<div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:moll' %}">مولات</a>
+							<div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Hotels' %}">فنادق</a>
+							<div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="{% url 'projects:Residential_Projects' %}">المشروعات السكنية و الفيلات</a>
+					  </div>
+
+		      </li>
+
+		       <li class="nav-item">
+		        <a class="nav-link" href="{% url 'projects:our_customer' %}">العملاء<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">قسم الموارد<span class="sr-only">(current)</span></a>
+		      </li>
+
+		       <li class="nav-item">
+		        <a class="nav-link" href="{% url 'projects:aboucom' %}">من نحن<span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link active" href="{% url 'home' %}">الرئيسية <span class="sr-only">(current)</span></a>
+		      </li>
+
+		    </ul>
+
+		  </div>
+
+
+	</nav>
+	<!-- End Navbar -->
+
+	{% endblock %}
